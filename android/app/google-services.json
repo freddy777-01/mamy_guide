@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "179381168316",
+    "project_id": "mamy-guide-a7c5a",
+    "storage_bucket": "mamy-guide-a7c5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179381168316:android:ead65f68afb14e94b208b9",
+        "android_client_info": {
+          "package_name": "com.example.mamy_guide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179381168316-ugkp3o2c3lli6nja54l7tcf42cnootik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1ZfMBrGh4R0MsZFLGm9AQcaDg8stjtN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179381168316-ugkp3o2c3lli6nja54l7tcf42cnootik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

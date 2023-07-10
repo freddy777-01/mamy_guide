@@ -42,6 +42,10 @@ dependencies:
   counter: ^0.2.2
   syncfusion_flutter_charts: ^22.1.37
   simple_star_rating: ^0.0.3
+  firebase_auth: ^4.6.3
+  firebase_core: ^2.14.0
+  cloud_firestore: ^4.8.2
+  flutter_conditional_rendering: ^2.0.0
 
 dev_dependencies:
   flutter_test:
