@@ -1,21 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../../cubit/cubit.dart';
-import '../../cubit/states.dart';
+import 'package:mamy_guide/cubit/cubit.dart';
+import 'package:mamy_guide/cubit/states.dart';
+import 'package:mamy_guide/modules/sections_of_age/normal_growth_rate_screen.dart';
+import 'package:mamy_guide/modules/sections_of_age/nutrition_screen.dart';
+import 'package:mamy_guide/modules/sections_of_age/nutrition_screen5.dart';
+import 'package:mamy_guide/modules/sections_of_age/sleeping_screen.dart';
+import 'package:mamy_guide/modules/sections_of_age/sleeping_screen5.dart';
+import 'package:mamy_guide/modules/sections_of_age/vaccines_screen.dart';
+import 'package:mamy_guide/modules/sections_of_age/vaccines_screen5.dart';
+import 'package:mamy_guide/shared/components/components.dart';
+import 'package:flutter/cupertino.dart';
 import '../../models/section_of_ages_model.dart';
-import '../../shared/components/components.dart';
+import 'normal_growth_rate_screen5.dart';
 
 class Routine5To8Screen extends StatelessWidget {
   Routine5To8Screen({Key? key}) : super(key: key);
 
   List<SectionOfAgesModel> list = [
-    SectionOfAgesModel("Nutrition", "assets/images/ROUTINE1.png", Container()),
-    SectionOfAgesModel("Sleeping", "assets/images/ROUTINE2.png", Container()),
     SectionOfAgesModel(
-        "Vaccinations", "assets/images/ROUTINE3.png", Container()),
+        "Nutrition", "assets/images/ROUTINE1.png", const NutritionScreen5()),
     SectionOfAgesModel(
-        "Normal Growth Data", "assets/images/ROUTINE4.png", Container()),
+        "Sleeping", "assets/images/ROUTINE2.png", SleepingScreen5()),
+    SectionOfAgesModel(
+        "Vaccinations", "assets/images/ROUTINE3.png", VaccinesScreen5()),
+    SectionOfAgesModel("Normal Growth Data", "assets/images/ROUTINE4.png",
+        NormalGrowthRateScreen5()),
   ];
   @override
   Widget build(BuildContext context) {
@@ -37,13 +47,13 @@ class Routine5To8Screen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30.0),
                     ),
                     clipBehavior: Clip.antiAlias,
-                    child: Card(
+                    child: const Card(
                       clipBehavior: Clip.antiAlias,
                       elevation: 15.0,
                       shadowColor: Colors.white70,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
+                        children: [
                           Text(
                             'ROUTINE',
                             style: TextStyle(

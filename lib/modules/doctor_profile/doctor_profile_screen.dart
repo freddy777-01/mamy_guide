@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mamy_guide/cubit/cubit.dart';
@@ -46,7 +48,7 @@ class DoctorProfileScreen extends StatelessWidget {
                   alignment: AlignmentDirectional.center,
                   child: Image(
                     image: const AssetImage(
-                        'assets/images/doctor_profile_pic.png'),
+                        'assets/images/doctor_profile_pic.jpg'),
                     height: MediaQuery.of(context).size.height * 0.33,
                   ),
                 ),
@@ -115,14 +117,14 @@ class DoctorProfileScreen extends StatelessWidget {
                     Expanded(
                       child: Column(
                         children: [
-                          Column(
+                          const Column(
                             children: [
-                              const Image(
+                              Image(
                                 image: AssetImage('assets/images/star.png'),
                                 height: 25.0,
                               ),
                               Row(
-                                children: const [
+                                children: [
                                   Expanded(
                                     child: Image(
                                       image: AssetImage(

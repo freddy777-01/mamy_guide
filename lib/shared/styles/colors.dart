@@ -4,7 +4,7 @@ MaterialColor primarySwatchColor = const MaterialColor(
   0xFF262A53,
   {
     50: Color(0x1a262a53),
-    100: Color(0x33262A53),
+    100: Color(0x33272A5E),
     200: Color(0x4D262A53),
     300: Color(0x66262A53),
     400: Color(0x80262A53),

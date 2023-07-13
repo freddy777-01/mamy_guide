@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mamy_guide/cubit/cubit.dart';
 import 'package:mamy_guide/cubit/states.dart';
 
-class NormalGrowthRateScreen extends StatelessWidget {
-  const NormalGrowthRateScreen({Key? key}) : super(key: key);
+class NormalGrowthRateScreen9 extends StatelessWidget {
+  const NormalGrowthRateScreen9({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -88,7 +88,7 @@ class NormalGrowthRateScreen extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    '4:8 months babies must be 6:8kg&50:75cm',
+                    '9:12 months babies must be10:12kg&85:100cm',
                     style: TextStyle(
                       color: Theme.of(context).primaryColor,
                       fontSize: 15.0,
@@ -127,7 +127,7 @@ class NormalGrowthRateScreen extends StatelessWidget {
                     ),
                     Expanded(
                       child: Text(
-                        'Your baby must reach 6kg per his 4th month after that, his weight increases by 500g every month to reach 8kg per his 8th.',
+                        'Your baby must reach 8kg per his 4th month after that, his weight increases by 500g every month to reach 12kg per his 8th.',
                         style: TextStyle(
                           fontSize: 15.0,
                           color: Theme.of(context).primaryColor,
@@ -166,7 +166,7 @@ class NormalGrowthRateScreen extends StatelessWidget {
                     ),
                     Expanded(
                       child: Text(
-                        'Your baby must reach 50cm per his 4th month after that, his height increases by 6.3cm every month to reach 75cm per his 8th.',
+                        'Your baby must reach 85cm per his 4th month after that, his height increases by 8.3cm every month to reach 100cm per his 8th.',
                         style: TextStyle(
                           fontSize: 15.0,
                           color: Theme.of(context).primaryColor,

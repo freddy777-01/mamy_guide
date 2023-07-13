@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SleepingScreen extends StatelessWidget {
-  const SleepingScreen({Key? key}) : super(key: key);
+class SleepingScreen5 extends StatelessWidget {
+  const SleepingScreen5({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +49,7 @@ class SleepingScreen extends StatelessWidget {
                   children: [
                     Image(
                       image: const AssetImage(
-                          'assets/images/sleeping_child_pic.png'),
+                          'assets/images/sleeping_child_pic2.png'),
                       height: MediaQuery.of(context).size.height / 4.5,
                     ),
                     const Spacer(),
@@ -66,7 +66,7 @@ class SleepingScreen extends StatelessWidget {
                         horizontal: 10.0,
                       ),
                       child: Text(
-                        'babies of 1:4 month must sleep 15 : 20 h a day',
+                        'babies of 5:8 month must sleep 12 : 25 h a day',
                         style: TextStyle(
                           color: Theme.of(context).primaryColor,
                           fontSize: 15.0,
@@ -92,12 +92,12 @@ class SleepingScreen extends StatelessWidget {
                   context: context,
                   text: 'from 9,10 pm to 6,7 am',
                   details:
-                      'Through it, he may wake and take\n2-4 feeding doses',
+                      'Through it, he may wake and take\n2-3 feeding doses',
                 ),
                 builtItem(
                   context: context,
                   text: 'from 9-10 am to 12-1 pm',
-                  details: 'It must be after his 4th feeding dose',
+                  details: 'It must be after his 3rd feeding dose',
                 ),
                 builtItem(
                   context: context,

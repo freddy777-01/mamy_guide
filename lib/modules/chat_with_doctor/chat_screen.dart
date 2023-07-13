@@ -13,6 +13,7 @@ import 'package:simple_star_rating/simple_star_rating.dart';
 
 import '../../shared/components/constants.dart';
 
+// ignore: must_be_immutable
 class ChatScreen extends StatelessWidget {
   ChatScreen({Key? key, this.doctor, this.parent}) : super(key: key);
   DoctorModel? doctor;
@@ -231,7 +232,7 @@ class ChatScreen extends StatelessWidget {
                                     'No messages yet',
                                     style: Theme.of(context)
                                         .textTheme
-                                        .headline4!
+                                        .headlineMedium!
                                         .copyWith(
                                           color: const Color(0xFFFFA0A0),
                                         ),
@@ -357,7 +358,7 @@ class ChatScreen extends StatelessWidget {
             return SimpleDialog(
               title: Text(
                 'Rate ${doctor!.name}',
-                style: Theme.of(context).textTheme.headline6!.copyWith(
+                style: Theme.of(context).textTheme.titleLarge!.copyWith(
                       color: const Color(0xFFFFA0A0),
                     ),
               ),
@@ -382,7 +383,6 @@ class ChatScreen extends StatelessWidget {
                     rating: 5,
                     spacing: 5,
                     onRated: (rating) {
-                      print(rating);
                       AppCubit.get(context).doctorRate = rating!;
                     },
                     starCount: 10,
@@ -396,7 +396,7 @@ class ChatScreen extends StatelessWidget {
                     AppCubit.get(context).makeDoctorRate(doctor as DoctorModel);
                     Navigator.pushAndRemoveUntil(
                         context,
-                        MaterialPageRoute(builder: (_) => HomeLayout()),
+                        MaterialPageRoute(builder: (_) => const HomeLayout()),
                         (route) => false);
                   },
                   child: const Text(
@@ -411,12 +411,13 @@ class ChatScreen extends StatelessWidget {
             );
           });
     } else {
-      Navigator.pushAndRemoveUntil(context,
-          MaterialPageRoute(builder: (_) => HomeLayout()), (route) => false);
+      Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (_) => const HomeLayout()),
+          (route) => false);
     }
   }
 
-  @override
   Widget _buildSenderMessage(
           {required BuildContext context, required String message}) =>
       Align(

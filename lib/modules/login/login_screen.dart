@@ -102,7 +102,7 @@ class LoginScreen extends StatelessWidget {
                       height: MediaQuery.of(context).size.height / 20.0,
                     ),
                     defaultTextFormField(
-                      hint: 'User Name',
+                      hint: 'Email',
                       prefixIcon: Icons.person,
                       type: TextInputType.name,
                       controller: LoginCubit.get(context).emailLoginController,

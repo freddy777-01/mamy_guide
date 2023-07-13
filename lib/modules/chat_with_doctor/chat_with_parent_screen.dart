@@ -79,7 +79,7 @@ class ChatWithParentScreen extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
-                color: const Color(0xFFFFE3E3),
+                color: Color(0xFFFFE3E3),
               ),
             ),
           ],

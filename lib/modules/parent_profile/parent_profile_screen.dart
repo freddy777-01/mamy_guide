@@ -56,7 +56,7 @@ class ParentProfileScreen extends StatelessWidget {
                         horizontal: 15.0,
                       ),
                       child: const Text(
-                        '7 months after 27 days',
+                        'Parent profile checks',
                         style: TextStyle(
                           color: Color(0xFFFFE3E3),
                           fontSize: 15.0,
@@ -335,7 +335,7 @@ class ParentProfileScreen extends StatelessWidget {
                                   Column(
                                     children: [
                                       Text(
-                                        '12feb,2022',
+                                        '2July,2023',
                                         style: TextStyle(
                                           fontSize: 15,
                                           fontWeight: FontWeight.bold,

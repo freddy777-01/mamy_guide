@@ -7,7 +7,7 @@ import 'package:mamy_guide/modules/sections_of_age/nutrition_screen.dart';
 import 'package:mamy_guide/modules/sections_of_age/sleeping_screen.dart';
 import 'package:mamy_guide/modules/sections_of_age/vaccines_screen.dart';
 import 'package:mamy_guide/shared/components/components.dart';
-
+import 'package:flutter/cupertino.dart';
 import '../../models/section_of_ages_model.dart';
 
 class Routine1To4Screen extends StatelessWidget {

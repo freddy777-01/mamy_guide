@@ -7,7 +7,7 @@ import 'package:mamy_guide/models/doctor_model.dart';
 import 'package:mamy_guide/modules/doctor_profile/doctor_profile_screen.dart';
 
 class ChatWithDoctorScreen extends StatelessWidget {
-  ChatWithDoctorScreen({Key? key}) : super(key: key);
+  const ChatWithDoctorScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -82,7 +82,7 @@ class ChatWithDoctorScreen extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
-                color: const Color(0xFFFFE3E3),
+                color: Color(0xFFFFE3E3),
               ),
             ),
           ],

@@ -5,6 +5,8 @@ class NearestHospitalsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Text('Coming soon IFM dev'), // correct and allign it well
+    );
   }
 }
